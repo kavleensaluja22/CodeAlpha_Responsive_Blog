@@ -1,0 +1,245 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kavleen}{Kaur}{ \urlstyle{same}\href{http://kavleensaluja22@gmail.com}{kavleensaluja22@gmail.com} \
+\ | +91-8569893923 | \
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{PUNJAB TECHNICAL UNIVERSITY}
+\descript{Masters in Computer Science}
+\location{ 2024 | cgc,jhanjheri}
+\sectionsep
+
+\subsection{Kurukshetra University}
+\descript{Bcom with Mathametics}
+\location{2022 | Ambala}
+
+location{}
+
+\sectionsep
+
+\subsection{DAV Public School}
+\location{2019|  Naraingarh(Ambala)}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+LinkedIn:// \href{www.linkedin.com/in/
+/kavleensaluja22}{\bf kavleensaluja22} \\
+Github:// \href{https://github.com/kavleensaluja22}{\bf kavleensaluja22} \\
+GDB://  \href{https://www.onlinegdb.com/myfiles}{\bf kavleensaluja} \\
+HackerRank://  \href{https://www.hackerrank.com/dashboard}{\bf Kavleen} \\
+LeetCode://  \href{https://leetcode.com/problemset/all/}{\bf kavleen} \\
+CodingNinja://  \href{https://www.codingninjas.com/}{\bf kavleensaluja}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+
+
+\subsection{Undergraduate}
+Data Structures and Algorithms \\
+Operating Systems \\
+Object Oriented Programming \\
+Design and Analysis of Algorithms \\
+Database Management System \\
+Linux \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+
+ \textbullet{}  Python \textbullet{} Django \textbullet{} Javascript  \\
+HTML \textbullet{} CSS  \\ 
+\location{Over 1000 lines:}
+ \textbullet{} Panda\textbullet{} Numpy\textbullet{} Bootstrap \\
+\location{Familiar:}
+ \textbullet{} UX/UI \textbullet{} Flutter \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Purple Tutor}
+\descript{| python tutor }
+\location{July 2022-Oct 2022 }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Helped students to improve their grades and test scores by 80%..
+\item Taught Python to diverse groups of students from Dubai, Philippines, Egypt, India, and Africa, incorporating game- based learning strategies on Purple Tutor's platform, across 20-25 classes. 
+\item Managed administrative tasks such as scheduling and record keeping.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Code Alpha}
+\descript{|Software Developer Intern }
+
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+\item Led and shipped Yoda - the admin interface for the new Phoenix platform. 
+\item Full-stack developer - Wrote and reviewed code for JS using Backbone, Jade, Stylus and Require and Scala using Play
+\end{tightemize}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{E-commerce website}
+\descript{| Python ,Django, ux/ui , JavaScript}
+\location{April 2022 – June 2022 }
+
+Developed a user-friendly E-Commerce platform connecting multiple handmade product sellers with customers, resulting in seamless transactions and boosted sales. Implemented essential features such as a secure payment gateway, cart, WishList, and coupon functionalities, empowering artisans to showcase and sell their creations effectively. 
+\sectionsep
+
+\runsubsection{Dynamic website for a tractor company}
+\descript{|Python ,Django, JavaScript, BootStrap}
+\location{FEB 2023  – April 2023 | Ithaca, NY}
+Developed a dynamic website for a tractor company, incorporating user verification through OTP and feedback options, and enabling storage of user information such as name, phone number, and address. Created an intuitive interface featuring tractor information and photos, with added location and language options for enhanced usability.research. 
+\sectionsep
+
+\runsubsection{Gun water snake GAME }
+\descript{|Python }
+\location{FEB 2022  }
+Developed it during python learning . This game is played between user and computer . It's a guessing game , In this user select G(gun),W(water),S(snake).
+\sectionsep
+
+\runsubsection{Resume Builder }
+\descript{|Python, Django , ux/ui }
+\location{July 2023  }
+Developed a Python-based resume builder web app using Django and designed user interfaces with Figma.
+\sectionsep
+
+\runsubsection{Portfolio }
+\descript{| Django , html , css }
+\location{July 2023  }
+Created a professional portfolio website showcasing previous projects and skills. Utilized HTML and CSS to design a modern and visually appealing interface, demonstrating a keen eye for frontend design.
+\sectionsep
+
+\runsubsection{Netflix Clone }
+\descript{|figma (ux/ui) }
+\location{July 2023  }
+Designed and developed a functional Netflix clone with a focus on delivering an immersive user experience.
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certificates} 
+\begin{tabular}{rll}
+2022	       & Python and ruby on rails \\
+2022	     & Django\\
+2023	     & Flutter\\
+2023    &  Pytthon for Machine Learning with Numpy , Pandas , Matplotlib \\
+2023     & UX/UI Design (Figma) \\
+2023     & Hackathon  \\
+\end{tabular}
+\sectionsep
+
+
+
+
+\end{document} 
+\documentclass[]{article}

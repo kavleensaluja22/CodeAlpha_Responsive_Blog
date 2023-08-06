@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Inter, sans-serif;
+            color: black;
+        }
+
+        /* Common styles for section titles and fields */
+        .section-title,
+        .field-title {
+            font-size: 24px;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        /* Common styles for input fields */
+        .input-field {
+            background: #F2F2F2;
+            border: 0.50px black solid;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        /* Resume section titles */
+        .resume-sections {
+            color: #777CA6;
+            font-size: 24px;
+            font-weight: 700;
+            word-wrap: break-word;
+        }
+
+        /* Personal details section */
+        .personal-details {
+            background: #5E5757;
+            color: white;
+        }
+
+        /* Other resume sections */
+        .resume-section:not(.personal-details) {
+            background: #5E5757;
+            color: white;
+        }
+
+        /* Profile image container */
+        .profile-image-container {
+            background: #D9D9D9;
+            border: 0.50px rgba(0, 0, 0, 0.67) solid;
+        }
+
+        /* Spacing between sections */
+        .section-spacing {
+            margin-top: 20px;
+        }
+
+        /* Gray div for "Resume Sections" title */
+        .resume-title-container {
+            width: 415px;
+            height: 87px;
+            background: #D9D9D9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Center the resume section elements */
+        .resume-section-container {
+            width: 415px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        input[type="text"] {
+            width: 90%;
+            box-sizing: border-box;
+            padding: 9px 10px;
+            margin: 15px 0;
+            font-size: 24px;
+            font-weight: 700;
+            border: 0.50px black solid;
+            background: #F2F2F2;
+            color: black;
+            word-wrap: break-word;
+        }
+        input[type="text1"] {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 9px 10px;
+            margin: 15px 0;
+            font-size: 24px;
+            font-weight: 700;
+            border: 0.50px black solid;
+            background: #F2F2F2;
+            color: black;
+            word-wrap: break-word;
+        }
+        input[type="textt"] {
+            width: 160%;
+            box-sizing: border-box;
+            padding: 9px 10px;
+            margin: 15px 0;
+            font-size: 24px;
+            font-weight: 700;
+            border: 0.50px black solid;
+            background: #F2F2F2;
+            color: black;
+            word-wrap: break-word;
+        }
+        input[type="texttt"] {
+            width: 80%;
+            box-sizing: border-box;
+            padding: 9px 10px;
+            margin: 15px 0;
+            font-size: 24px;
+            font-weight: 700;
+            border: 0.50px black solid;
+            background: #F2F2F2;
+            color: black;
+            word-wrap: break-word;
+        }
+        .next-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100px; /* Adjust the height to your desired value */
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent grey background */
+            z-index: 9999; /* Ensure it appears on top of other elements */
+        }
+        
+        .next {
+            background: #D9D9D9;
+            color: black;
+            font-size: 24px;
+            font-family: Inter;
+            font-weight: 700;
+            width: 415px;
+            height: 66px;
+            padding: 10px;
+            border: 1px solid black; /* Black border around the button */
+            border-radius: 5px; /* Rounded corners */
+            text-align: center;
+        }
+
+        .resume-section-container {
+            margin-bottom: 20px; /* Adjust the value to your desired spacing */
+        }
+
+    .button-bottom {
+        position: absolute;
+        bottom: 30px; /* Adjust this value as needed */
+        left: 30px; /* Adjust this value as needed */
+    }
+    
+    /* Style to position the second button at the bottom right */
+    .butt-bottom {
+        position: absolute;
+        bottom: 30px; /* Adjust this value as needed */
+        right: 570px; /* Adjust this value as needed */
+    }
+    /* Style for the Previous Button */
+.button {
+    display: inline-block;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Style for the Done Button */
+.butt {
+    display: inline-block;
+    background-color: #D9D9D9;
+    color: black;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style to position the second button at the bottom right */
+.butt-bottom {
+    position: absolute;
+    bottom: 30px; /* Adjust this value as needed */
+    right: 540px; /* Adjust this value as needed */
+}
+    </style>
+</head>
+<body>
+    <!--[if lt IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <script src="" async defer></script>
+    <form method="POST" action="final">
+        {% csrf_token %}
+    
+    <div style="width: 100%; height: 100%; position: relative; background: white">
+        <!-- Header Section -->
+        <div style="width: 717px; height: 80px; left: 0px; top: 36px; position: absolute; background: #D9D9D9"></div>
+        <!-- Personal Details Section -->
+        <div style="width: 243px; left: 26px; top: 64px; position: absolute;" class="section-title">Personal Details</div>
+        <div style="width: 223px; height: 80px; left: 23px; top: 167px; position: absolute;" class="field-title">Full Name*  <input type="text" id="full-name" name="full-name"></div>
+        
+        
+            
+       
+        <div style="width: 214px; height: 29px; left: 19px; top: 296px; position: absolute;" class="field-title contact">Contact Number* <input type="text" id="contactNumber" name="contactNumber"></div>
+
+        <div style="width: 202px; height: 52px; left: 22px; top: 428px; position: absolute;" class="field-title address"> Address* <input type="textt" id="fullAddress" name="fullAddress"></div>
+
+         <!-- Country -->
+         <div style="width: 230px; height: 91px; left: 350px; top: 170px; position: absolute;" class="field-title">Country* <input type="text" id="Country"name="Country"></div>
+        
+         <!-- Designation -->
+         <div style="width: 393px; height: 63px; left: 340px; top: 299px; position: absolute;" class="field-title">Designation <input type="text1" id="Designation" name="Designation"></div>
+ 
+         <!-- LinkedIn -->
+         <div style="left: 412px; top: 428px; position: absolute;" class="field-title">LinkedIn <input type="texttt" id="LinkedIn" name="LinkedIn"></div>
+     <!-- Your HTML content for the page where the user uploads the profile image -->
+<input type="file" id="profileImageInput" style="display: none;" accept="image/*">
+<div style="width: 288px; height: 146px; left: 19px; top: 589px; position: absolute;" class="field-title">Profile Image</div>
+<div style="width: 507px; height: 188px; left: 210px; top: 594px; position: absolute;" class="profile-image-container">
+  <img src="#" id="profileImagePreview" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div>
+<!-- Drop a file here -->
+<div style="left: 350px; top: 672px; position: absolute;" class="field-title">Drop a file here</div>
+<label for="profileImageInput" style="cursor: pointer; width: 101px; height: 61px; left: 580px; top: 662px; position: absolute; background: black; border-radius: 50%;">
+  <img src="static/drop.jpg" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</label>
+
+<!-- In resume.html -->
+
+
+
+
+         
+          
+        <!-- Resume Sections -->
+        <div style="width: 415px; left: 900px; top: 36px; position: absolute;">
+            <div class="resume-title-container">
+                <div class="resume-sections">Resume Sections</div>
+            </div>
+            <div class="resume-section-container">
+                <!-- Personal Details Section in Resume Sections -->
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/resume" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                        <img src="static/download.png" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                        <span style="vertical-align: middle;">Personal Details</span>
+                    </a>
+                </div>
+                
+                <!-- Other Sections in Resume Sections -->
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/summary" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/s.png" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Summary</span>
+                </div>
+
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/edu" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/edu.jpeg" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Education</span>
+                </div>
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/co" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/course.jpeg" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Course</span>
+                </div>
+                
+               
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/sk" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/skills.png" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Skills</span>
+                </div>
+                
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/ex" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/experince.png" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Experience</span>
+                </div>
+                
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/lang" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/lang.jpeg" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Languages</span>
+                </div>
+                <div style="width: 415px; height: 66px; margin: 10px;" class="resume-section personal-details">
+                    <a href="/ho" style="text-decoration: none; color: white; display: flex; align-items: center;">
+                    <img src="static/hobbies.jpeg" width="60px" height="66px" style="vertical-align: middle; margin-right: 10px;">
+                    <span style="vertical-align: middle; display: inline-block;">Hobbies</span>
+                </div>
+                
+                
+                
+        </div>
+        <div class="next-container">
+            <a href="/summary" style="text-decoration: none;">
+                <div class="next" style="width: 415px; height: 66px; margin: 20px;">
+                    NEXT
+                </div>
+            </a>
+        </div>
+       
+        
+        <!-- Done Button -->
+        <div class="butt-bottom">
+            <button input type="submit" onclick="handleSubmit()"> Done </button>
+        </div>
+        
+        
+    
+    </form>
+
+</body>
+</html>
+
+
+
